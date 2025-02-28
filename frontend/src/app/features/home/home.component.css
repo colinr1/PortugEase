@@ -1,0 +1,15 @@
+.home-grid {
+  background: #12521a;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px;
+}
+.home-feature {
+  height: 350px;
+  width: 350px;
+  margin: 5px;
+  background: #2ada41;
+  border: 2px solid #c8ae00;
+  box-shadow: inset 0 0 4px #000094;
+  border-radius: 10px;
+}

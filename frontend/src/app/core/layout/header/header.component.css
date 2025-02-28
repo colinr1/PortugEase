@@ -1,3 +1,54 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  background: #f7fff7;
+  padding: 5px 10px 0px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 4px #000094;
+  border: #000094 solid 2px;
+}
+
 header {
-  font-weight: bold;
+  font-family: "ABeeZee", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  background-color: #2ada41;
+}
+
+header img {
+  width: auto;
+  height: 3.5rem;
+}
+
+header h1 {
+  font-family: "ABeeZee", sans-serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  color: #12521a;
+}
+
+header nav {
+  display: flex;
+  margin-left: 2rem;
+  gap: 1.5rem;
+}
+
+header nav a {
+  font-size: 1.125rem;
+  color: #fff;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #c8ae00;
+  text-decoration: none;
+}
+
+header nav a.active {
+  color: #c8ae00;
+  border-bottom: 2px solid #c8ae00;
+  padding-bottom: 0.25rem;
 }
