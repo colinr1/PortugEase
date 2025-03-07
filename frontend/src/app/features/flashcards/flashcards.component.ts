@@ -4,8 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-flashcards',
   imports: [],
   templateUrl: './flashcards.component.html',
-  styleUrl: './flashcards.component.css'
+  styleUrl: './flashcards.component.css',
 })
-export class FlashcardsComponent {
-
-}
+export default class FlashcardsComponent {}

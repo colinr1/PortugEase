@@ -1,9 +1,41 @@
 <div>
   <app-wotd />
   <div class="home-grid">
-    <div class="home-feature"></div>
-    <div class="home-feature"></div>
-    <div class="home-feature"></div>
-    <div class="home-feature"></div>
+    <a [routerLink]="['/quizzes']">
+      <div class="home-feature">
+        <div>
+          <span>Quizzes </span>
+          <i class="fi fi-rr-quiz-alt"></i>
+        </div>
+        <img src="toucan.png" />
+      </div>
+    </a>
+    <a [routerLink]="['/flashcards']">
+      <div class="home-feature">
+        <div>
+          <span>Flashcards </span>
+          <i class="fi fi-rr-cards-blank"></i>
+        </div>
+        <img class="cristo" src="cristo.png" />
+      </div>
+    </a>
+    <a [routerLink]="['/grammar']">
+      <div class="home-feature">
+        <div>
+          <span>Grammar Lessons </span>
+          <i class="fi fi-rr-lesson"></i>
+        </div>
+        <img src="guitar.png" />
+      </div>
+    </a>
+    <a [routerLink]="['/sentences']">
+      <div class="home-feature">
+        <div>
+          <span>Sentence Builder </span>
+          <i class="fi fi-rr-portuguese"></i>
+        </div>
+        <img src="coxinha.png" />
+      </div>
+    </a>
   </div>
 </div>

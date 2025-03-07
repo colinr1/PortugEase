@@ -4,8 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-grammar',
   imports: [],
   templateUrl: './grammar.component.html',
-  styleUrl: './grammar.component.css'
+  styleUrl: './grammar.component.css',
 })
-export class GrammarComponent {
-
-}
+export default class GrammarComponent {}
