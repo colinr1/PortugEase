@@ -1,0 +1,62 @@
+[
+  {
+    "question": "How do you say 'apple' in Portuguese?",
+    "options": ["Banana", "Maçã", "Uva", "Abacaxi"],
+    "answer": "Maçã",
+    "id": 1
+  },
+  {
+    "question": "Qual é o número 'sete' em inglês?",
+    "options": ["Five", "Nine", "Seven", "Eleven"],
+    "answer": "Seven",
+    "id": 2
+  },
+  {
+    "question": "What is the translation of 'dog' in Portuguese?",
+    "options": ["Gato", "Pássaro", "Cachorro", "Peixe"],
+    "answer": "Cachorro",
+    "id": 3
+  },
+  {
+    "question": "How do you say 'thank you' in Portuguese?",
+    "options": ["Obrigado", "Por favor", "Desculpa", "Sim"],
+    "answer": "Obrigado",
+    "id": 4
+  },
+  {
+    "question": "Which of these is a means of transportation?",
+    "options": ["Mesa", "Cadeira", "Avião", "Janela"],
+    "answer": "Avião",
+    "id": 5
+  },
+  {
+    "question": "Which of these words means 'water'?",
+    "options": ["Fogo", "Água", "Terra", "Vento"],
+    "answer": "Água",
+    "id": 6
+  },
+  {
+    "question": "How do you say 'Monday' in Portuguese?",
+    "options": ["Domingo", "Segunda-feira", "Quarta-feira", "Sexta-feira"],
+    "answer": "Segunda-feira",
+    "id": 7
+  },
+  {
+    "question": "What color is the sky on a sunny day?",
+    "options": ["Azul", "Vermelho", "Preto", "Amarelo"],
+    "answer": "Azul",
+    "id": 8
+  },
+  {
+    "question": "What do you use to write?",
+    "options": ["Colher", "Caneta", "Copo", "Prato"],
+    "answer": "Caneta",
+    "id": 9
+  },
+  {
+    "question": "How do you say 'bye' in Portuguese?",
+    "options": ["Olá", "Sim", "Tchau", "Obrigado"],
+    "answer": "Tchau",
+    "id": 10
+  }
+]

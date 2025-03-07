@@ -1,14 +1,20 @@
-<header>
+<header class="topnav">
   <a routerLink="">
     <div class="logo">
       <img src="logo.png" alt="PortugEase! logo" />
       <h1>PortugEase!</h1>
     </div>
   </a>
-  <nav>
-    <a routerLink="/home" routerLinkActive="active">Home</a>
-    <a routerLink="/lessons" routerLinkActive="active">Lessons</a>
-    <a routerLink="/quiz" routerLinkActive="active">Quiz</a>
-    <a routerLink="/about" routerLinkActive="active">About</a>
-  </nav>
+  <div id="topLinks">
+    <nav id="myLinks">
+      <a routerLink="" routerLinkActive="active">Home</a>
+      <a routerLink="/quizzes" routerLinkActive="active">Quizzes</a>
+      <a routerLink="/flashcards" routerLinkActive="active">Flashcards</a>
+      <a routerLink="/lessons" routerLinkActive="active">Lessons</a>
+      <a routerLink="/sentences" routerLinkActive="active">Sentence Builder</a>
+    </nav>
+    <a href="javascript:void(0);" class="icon" (click)="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
 </header>

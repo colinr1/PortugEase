@@ -14,12 +14,16 @@ export const routes: Routes = [
     loadComponent: () => import('./features/flashcards/flashcards.component'),
   },
   {
-    path: 'grammar',
-    loadComponent: () => import('./features/grammar/grammar.component'),
+    path: 'lessons',
+    loadComponent: () => import('./features/lessons/lessons.component'),
   },
   {
     path: 'sentences',
     loadComponent: () =>
       import('./features/sentence-builder/sentence-builder.component'),
+  },
+  {
+    path: 'quiz',
+    loadComponent: () => import('./features/quizzes/quiz/quiz.component'),
   },
 ];

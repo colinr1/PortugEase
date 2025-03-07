@@ -7,4 +7,15 @@ import { RouterLink } from '@angular/router';
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+  myFunction() {
+    let x = document.getElementById('myLinks');
+    if (x && x.style.display === 'block') {
+      x.style.display = 'none';
+    } else {
+      if (x) {
+        x.style.display = 'block';
+      }
+    }
+  }
+}
