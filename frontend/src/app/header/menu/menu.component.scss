@@ -17,6 +17,12 @@
     &:hover {
       cursor: pointer;
     }
+
+    @media (min-width: 700px) {
+      &:hover {
+        color: v.$app-yellow;
+      }
+    }
   }
 
   @media (max-width: 700px) {
@@ -24,12 +30,15 @@
     height: 180px;
 
     div {
-      width: 270px;
-      background: v.$app-x-light-yellow;
-      border: 2px solid v.$app-blue;
-      border-radius: 5px;
-      text-align: center;
-      box-shadow: 2px 2px 2px v.$app-green;
+      width: 60%;
+      //   background: v.$app-x-light-yellow;
+      //   border-top: 2px solid v.$app-green;
+      //   border-top: 1px v.$app-green;
+      border-bottom: 1px solid v.$app-yellow;
+      margin-left: 5%;
+      margin-right: 35%;
+      //   text-align: center;
+      //   box-shadow: 2px 2px 2px v.$app-green;
 
       &:hover {
         background: v.$app-white;
