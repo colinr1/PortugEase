@@ -1,21 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { MenuComponent } from './menu/menu.component';
 
 @Component({
   selector: 'app-header',
-  imports: [RouterLink],
+  imports: [RouterLink, MenuComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
-  myFunction() {
-    let x = document.getElementById('myLinks');
-    if (x && x.style.display === 'block') {
-      x.style.display = 'none';
-    } else {
-      if (x) {
-        x.style.display = 'block';
-      }
-    }
+  isMenuOpen = signal<boolean>(false);
+
+  onClickMenu() {
+    this.isMenuOpen.update((val) => !val);
   }
 }

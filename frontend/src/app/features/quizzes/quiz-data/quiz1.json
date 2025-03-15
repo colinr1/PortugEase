@@ -6,7 +6,7 @@
     "id": 1
   },
   {
-    "question": "Qual é o número 'sete' em inglês?",
+    "question": "What is the number 'seven' in English?",
     "options": ["Five", "Nine", "Seven", "Eleven"],
     "answer": "Seven",
     "id": 2

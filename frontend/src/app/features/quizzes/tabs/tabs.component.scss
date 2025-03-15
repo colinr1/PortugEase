@@ -16,20 +16,22 @@
       active-focus-label-text-color: v.$app-yellow,
       active-hover-label-text-color: v.$app-yellow,
       active-focus-indicator-color: v.$app-yellow,
+      label-text-size: 2rem,
     )
   );
 }
 
 mat-tab-group {
-  font-size: 2rem;
   color: v.$app-white;
   padding: 15px;
-  font-size: 2rem;
   font-weight: 700;
 }
 
 mat-tab {
   position: absolute;
+  label {
+    font-size: 5rem;
+  }
 }
 
 div {
