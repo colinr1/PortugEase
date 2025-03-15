@@ -1,0 +1,9 @@
+@use "./sass/variables" as v;
+
+body {
+  background: v.$app-white;
+  font-family: "ABeeZee", sans-serif;
+}
+
+// html, body { height: 100%; }
+// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

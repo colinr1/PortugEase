@@ -1,0 +1,18 @@
+@use "variables" as v;
+
+@mixin coming-soon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: v.$app-green;
+  }
+  img {
+    width: 20%;
+    height: 20%;
+    margin-top: 20px;
+  }
+}

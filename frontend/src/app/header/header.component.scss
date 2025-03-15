@@ -1,0 +1,73 @@
+@use "../../sass/variables" as v;
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  background-color: v.$app-green;
+}
+
+.logo {
+  display: flex;
+  background: v.$app-white;
+  padding: 0.3rem;
+  border-radius: 10px;
+  border: v.$app-blue solid 2px;
+  box-shadow: inset 0 0 4px v.$app-yellow;
+}
+
+.logo:hover {
+  box-shadow: inset 0 0 20px v.$app-yellow;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  padding-top: 20px;
+  padding-right: 8px;
+  height: 3.5rem;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: v.$app-green;
+}
+
+.burger {
+  font-size: 3rem;
+  float: right;
+  color: v.$app-white;
+}
+
+.burger:hover {
+  font-size: 3.2rem;
+  float: right;
+  color: v.$app-yellow;
+  text-shadow: 0 0 2px v.$app-blue;
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    padding: 1rem;
+  }
+
+  .logo {
+    width: 220px;
+    height: 70px;
+  }
+
+  img {
+    height: 2.5rem;
+    width: auto;
+    padding-top: 13px;
+    padding-right: 1px;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+}

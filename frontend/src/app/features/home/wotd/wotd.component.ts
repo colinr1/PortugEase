@@ -4,6 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-wotd',
   imports: [],
   templateUrl: './wotd.component.html',
-  styleUrl: './wotd.component.css',
+  styleUrl: './wotd.component.scss',
 })
 export class WotdComponent {}

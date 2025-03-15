@@ -7,7 +7,7 @@ import { PercentPipe } from '@angular/common';
   selector: 'app-quiz',
   imports: [RouterLink, PercentPipe],
   templateUrl: './quiz.component.html',
-  styleUrl: './quiz.component.css',
+  styleUrl: './quiz.component.scss',
 })
 export default class QuizComponent {
   questions: any = questions;

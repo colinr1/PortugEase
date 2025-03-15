@@ -1,41 +1,31 @@
-<div>
-  <app-wotd />
-  <div class="home-grid">
-    <a [routerLink]="['/quizzes']">
-      <div class="home-feature">
-        <div>
-          <span>Quizzes </span>
-          <i class="fi fi-rr-quiz-alt"></i>
-        </div>
-        <img src="toucan.png" />
-      </div>
-    </a>
-    <a [routerLink]="['/flashcards']">
-      <div class="home-feature">
-        <div>
-          <span>Flashcards </span>
-          <i class="fi fi-rr-cards-blank"></i>
-        </div>
-        <img class="cristo" src="cristo.png" />
-      </div>
-    </a>
-    <a [routerLink]="['/lessons']">
-      <div class="home-feature">
-        <div>
-          <span>Lessons </span>
-          <i class="fi fi-rr-lesson"></i>
-        </div>
-        <img src="guitar.png" />
-      </div>
-    </a>
-    <a [routerLink]="['/sentences']">
-      <div class="home-feature">
-        <div>
-          <span>Sentence Builder </span>
-          <i class="fi fi-rr-portuguese"></i>
-        </div>
-        <img src="coxinha.png" />
-      </div>
-    </a>
-  </div>
+<app-wotd />
+<div class="home-grid">
+  <a class="home-feature" [routerLink]="['/quizzes']">
+    <div>
+      <span>Quizzes </span>
+      <i class="fi fi-rr-quiz-alt"></i>
+    </div>
+    <img src="toucan.png" />
+  </a>
+  <a class="home-feature" [routerLink]="['/flashcards']">
+    <div>
+      <span>Flashcards </span>
+      <i class="fi fi-rr-cards-blank"></i>
+    </div>
+    <img class="large-img" src="cristo.png" />
+  </a>
+  <a class="home-feature" [routerLink]="['/lessons']">
+    <div>
+      <span>Lessons </span>
+      <i class="fi fi-rr-lesson"></i>
+    </div>
+    <img class="large-img" src="guitar.png" />
+  </a>
+  <a class="home-feature" [routerLink]="['/sentences']">
+    <div>
+      <span>Sentence Builder </span>
+      <i class="fi fi-rr-portuguese"></i>
+    </div>
+    <img src="coxinha.png" />
+  </a>
 </div>

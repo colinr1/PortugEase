@@ -4,6 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-lessons',
   imports: [],
   templateUrl: './lessons.component.html',
-  styleUrl: './lessons.component.css',
+  styleUrl: './lessons.component.scss',
 })
 export default class LessonsComponent {}

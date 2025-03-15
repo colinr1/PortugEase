@@ -4,6 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-flashcards',
   imports: [],
   templateUrl: './flashcards.component.html',
-  styleUrl: './flashcards.component.css',
+  styleUrl: './flashcards.component.scss',
 })
 export default class FlashcardsComponent {}

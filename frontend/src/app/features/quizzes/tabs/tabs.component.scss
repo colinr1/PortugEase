@@ -1,0 +1,99 @@
+@use "../../../../sass/variables" as v;
+@use "@angular/material" as mat;
+
+:host {
+  @include mat.tabs-overrides(
+    (
+      container-height: 80px,
+      active-indicator-height: 5px,
+      divider-height: 3px,
+      divider-color: v.$app-white,
+      active-indicator-color: v.$app-yellow,
+      inactive-label-text-color: v.$app-white,
+      active-label-text-color: v.$app-yellow,
+      inactive-focus-label-text-color: v.$app-yellow,
+      inactive-hover-label-text-color: v.$app-yellow,
+      active-focus-label-text-color: v.$app-yellow,
+      active-hover-label-text-color: v.$app-yellow,
+      active-focus-indicator-color: v.$app-yellow,
+    )
+  );
+}
+
+mat-tab-group {
+  font-size: 2rem;
+  color: v.$app-white;
+  padding: 15px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+mat-tab {
+  position: absolute;
+}
+
+div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.quiz {
+  text-decoration: none;
+  position: relative;
+  height: 300px;
+  width: 300px;
+  margin: 5px;
+  margin-top: 40px;
+  //   border-top: 0;
+  //   padding-top: 0;
+  background: v.$app-white;
+  border: v.$app-blue solid 2px;
+  box-shadow: inset 0 0 4px v.$app-yellow;
+  border-radius: 10px;
+  color: v.$app-green;
+  font-size: 2rem;
+  font-weight: 700;
+  display: flex;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.quiz-title {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  height: 30%;
+  width: 100%;
+  border-bottom: v.$app-blue solid 2px;
+  border-radius: 10px;
+  background: v.$app-light-yellow;
+}
+
+.quiz-text {
+  position: absolute;
+  top: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  width: 80%;
+  height: 60%;
+  font-weight: 500;
+}
+
+.quiz:hover {
+  box-shadow: inset 0 0 20px v.$app-yellow;
+}
+
+.quizzes-category {
+  color: v.$app-white;
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding-top: 30px;
+  justify-self: center;
+}

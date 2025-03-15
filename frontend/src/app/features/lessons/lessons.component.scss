@@ -1,0 +1,5 @@
+@use "../../../sass/coming_soon_comp" as csc;
+
+:host {
+  @include csc.coming-soon;
+}
