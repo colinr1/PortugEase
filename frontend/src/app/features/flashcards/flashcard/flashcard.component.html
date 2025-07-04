@@ -1,0 +1,18 @@
+<!-- flashcard.component.html -->
+<div class="flashcard" *ngIf="currentFlashcard; else done">
+  <div class="card">
+    <div>{{ currentFlashcard?.front }}</div>
+  </div>
+  <hr />
+  <button *ngIf="!showBack" (click)="showBack = true">Show Answer</button>
+
+  <div class="answer" *ngIf="showBack">
+    <div *ngIf="showBack">{{ currentFlashcard?.back }}</div>
+  </div>
+</div>
+<div class="buttons">
+  <div class="next" (click)="moveToNextFlashcard()">Next</div>
+</div>
+<ng-template #done>
+  <p>No flashcards due now. Come back later!</p>
+</ng-template>

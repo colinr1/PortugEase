@@ -23,7 +23,12 @@ export const routes: Routes = [
       import('./features/sentence-builder/sentence-builder.component'),
   },
   {
-    path: 'quiz',
+    path: 'quiz/:quizId',
     loadComponent: () => import('./features/quizzes/quiz/quiz.component'),
+  },
+  {
+    path: 'flashcard/:flashcardDeckId',
+    loadComponent: () =>
+      import('./features/flashcards/flashcard/flashcard.component'),
   },
 ];

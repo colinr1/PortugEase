@@ -1,2 +1,82 @@
-<h1>Flashcards coming soon</h1>
-<img src="hook.png" alt="Under construction" />
+<div class="flashcards-intro">
+  <p class="flashcards-title">Flashcards</p>
+  <p class="flashcards-text">
+    Test your Portuguese skills with our fun and engaging flashcards! Whether
+    you're a beginner, intermediate, or advanced learner, these flashcards will
+    challenge you with vocabulary, grammar, expressions, and more. Choose your
+    level and see how much you know!
+  </p>
+</div>
+<div class="flashcards-grid">
+  <mat-tab-group>
+    <mat-tab class="tab" label="Beginner">
+      <div class="flashcards-container">
+        @for (flashcardDeck of beginnerFlashcardDecks; track flashcardDeck.id) {
+        <a class="flashcards" [routerLink]="['/flashcard', flashcardDeck.id]">
+          <div class="flashcard-title">{{ flashcardDeck.category }}</div>
+          <div class="flashcard-text">
+            Learn essential Brazilian Portuguese words with this basic
+            vocabulary flashcard.
+          </div>
+        </a>
+        }
+      </div>
+    </mat-tab>
+    <mat-tab class="tab" label="Intermediate"
+      ><div class="flashcard-container">
+        <a routerLink="">
+          <div class="flashcard">
+            <div class="flashcard-title">Flashcard 5</div>
+            <div class="flashcard-text">Coming soon</div>
+          </div>
+        </a>
+        <a routerLink="">
+          <div class="flashcard">
+            <div class="flashcard-title">Flashcard 6</div>
+            <div class="flashcard-text">Coming soon</div>
+          </div>
+        </a>
+        <a routerLink="">
+          <div class="flashcard">
+            <div class="flashcard-title">Flashcard 7</div>
+            <div class="flashcard-text">Coming soon</div>
+          </div>
+        </a>
+        <a routerLink="">
+          <div class="flashcard">
+            <div class="flashcard-title">Flashcard 8</div>
+            <div class="flashcard-text">Coming soon</div>
+          </div>
+        </a>
+      </div></mat-tab
+    >
+    <mat-tab class="tab" label="Advanced"
+      ><div class="flashcard-container">
+        <a routerLink="">
+          <div class="flashcard">
+            <div class="flashcard-title">Flashcard 9</div>
+            <div class="flashcard-text">Coming soon</div>
+          </div>
+        </a>
+        <a routerLink="">
+          <div class="flashcard">
+            <div class="flashcard-title">Flashcard 10</div>
+            <div class="flashcard-text">Coming soon</div>
+          </div>
+        </a>
+        <a routerLink="">
+          <div class="flashcard">
+            <div class="flashcard-title">Flashcard 11</div>
+            <div class="flashcard-text">Coming soon</div>
+          </div>
+        </a>
+        <a routerLink="">
+          <div class="flashcard">
+            <div class="flashcard-title">Flashcard 12</div>
+            <div class="flashcard-text">Coming soon</div>
+          </div>
+        </a>
+      </div></mat-tab
+    >
+  </mat-tab-group>
+</div>

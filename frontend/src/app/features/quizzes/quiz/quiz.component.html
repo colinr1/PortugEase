@@ -1,35 +1,41 @@
-<div class="quiz-intro">Basic Vocabulary</div>
+<div class="quiz-intro">{{ quiz[0]?.category }}</div>
 <div class="quiz-section">
-  <div class="question-box">
-    @if (question != null) {
-
-    <div class="question-no">Question {{ i + 1 }}/{{ totalQuestions }}</div>
-    <div class="question-text">{{ question.question }}</div>
-    <div class="question-options">
-      @for (option of question.options; track option) {
-      <label class="option">
-        <input
-          type="radio"
-          name="options"
-          id="option1"
-          class="checkmark"
-          value="{{ option }}"
-          [checked]="false"
-          (change)="onSelecting($event)"
-        />
-        <span>{{ option }} </span>
-      </label>
-      }
+  <div class="question-box" [class]="[currentQuestion ? '' : 'score-box']">
+    @if (currentQuestion) {
+    <div class="quiz-flex">
+      <div class="question-no">
+        Question {{ currentQuestionIndex + 1 }}/{{ totalQuestions }}
+      </div>
+      <div class="question-text">{{ currentQuestion.question }}</div>
+      <div class="question-options">
+        @for (answer of answers[currentQuestion.id]; track answer.id) {
+        <label class="option">
+          <input
+            type="radio"
+            name="options"
+            class="checkmark"
+            value="{{ answer.answerText }}"
+            [checked]="false"
+            (change)="onSelecting($event)"
+          />
+          <span>{{ answer.answerText }} </span>
+        </label>
+        }
+      </div>
     </div>
-    @if (i > 0) {
-    <button class="prev" (click)="onPrev()">Prev</button>
-    }
-    <button class="next" (click)="onNext()">Next</button>
-
+    <div
+      id="quiz-buttons"
+      [class]="currentQuestionIndex > 0 ? '' : 'next-right'"
+    >
+      @if (currentQuestionIndex > 0) {
+      <button class="prev" (click)="onPrev()">Prev</button>
+      }
+      <button class="next" (click)="onNext()">Next</button>
+    </div>
     } @else {
     <div class="score">
       <h3>Score :</h3>
-      <span>{{ this.score / this.totalQuestions | percent }}</span>
+      <span>{{ score / totalQuestions | percent }}</span>
     </div>
     }
   </div>

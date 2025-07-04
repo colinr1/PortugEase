@@ -8,5 +8,75 @@
   </p>
 </div>
 <div class="quizzes-grid">
-  <app-tabs> </app-tabs>
+  <mat-tab-group>
+    <mat-tab class="tab" label="Beginner">
+      <div class="quiz-container">
+        @for (quiz of beginnerQuizzes; track quiz.id) {
+        <a class="quiz" [routerLink]="['/quiz', quiz.id]">
+          <div class="quiz-title">{{ quiz.category }}</div>
+          <div class="quiz-text">
+            Learn essential Brazilian Portuguese words with this basic
+            vocabulary quiz.
+          </div>
+        </a>
+        }
+      </div>
+    </mat-tab>
+    <mat-tab class="tab" label="Intermediate"
+      ><div class="quiz-container">
+        <a routerLink="">
+          <div class="quiz">
+            <div class="quiz-title">Quiz 5</div>
+            <div class="quiz-text">Coming soon</div>
+          </div>
+        </a>
+        <a routerLink="">
+          <div class="quiz">
+            <div class="quiz-title">Quiz 6</div>
+            <div class="quiz-text">Coming soon</div>
+          </div>
+        </a>
+        <a routerLink="">
+          <div class="quiz">
+            <div class="quiz-title">Quiz 7</div>
+            <div class="quiz-text">Coming soon</div>
+          </div>
+        </a>
+        <a routerLink="">
+          <div class="quiz">
+            <div class="quiz-title">Quiz 8</div>
+            <div class="quiz-text">Coming soon</div>
+          </div>
+        </a>
+      </div></mat-tab
+    >
+    <mat-tab class="tab" label="Advanced"
+      ><div class="quiz-container">
+        <a routerLink="">
+          <div class="quiz">
+            <div class="quiz-title">Quiz 9</div>
+            <div class="quiz-text">Coming soon</div>
+          </div>
+        </a>
+        <a routerLink="">
+          <div class="quiz">
+            <div class="quiz-title">Quiz 10</div>
+            <div class="quiz-text">Coming soon</div>
+          </div>
+        </a>
+        <a routerLink="">
+          <div class="quiz">
+            <div class="quiz-title">Quiz 11</div>
+            <div class="quiz-text">Coming soon</div>
+          </div>
+        </a>
+        <a routerLink="">
+          <div class="quiz">
+            <div class="quiz-title">Quiz 12</div>
+            <div class="quiz-text">Coming soon</div>
+          </div>
+        </a>
+      </div></mat-tab
+    >
+  </mat-tab-group>
 </div>

@@ -1,4 +1,7 @@
+@use "../../sass/variables" as v;
+
 footer {
+  border-top: v.$app-blue 2px solid;
   font-size: 0.9rem;
   display: flex;
   flex-direction: row;
